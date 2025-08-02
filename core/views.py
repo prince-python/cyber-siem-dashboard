@@ -2,4 +2,4 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def home(request):
-    return HttpResponse("<h1>Welcome to the SIEM Dashboard</h1>")  
+    return render(request, 'index.html')  # Render the home template
